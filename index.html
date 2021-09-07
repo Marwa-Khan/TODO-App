@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--css connection-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--logo font-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster+Two:ital,wght@0,400;0,700;1,700&family=Oswald&display=swap" rel="stylesheet">
+  
+    <!--font-family for menus-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster+Two:ital,wght@0,400;0,700;1,700&family=Oswald&family=Signika:wght@500;600&display=swap" rel="stylesheet">
+    
+    <!--font-family for body-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster+Two:ital,wght@0,400;0,700;1,700&family=Oswald&family=Signika:wght@500;600&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>ToDo</title>
+</head>
+<body>
+
+    <!--header-->
+    <header class="header" id="header">
+        <div class="logo">
+            <h1>To<span>Do</span> App</h1>
+        </div>
+        <nav class="nav-bar">
+            <div class="menus">
+                <ul>
+                    <li class="menu-1"><a href="./index.html">Home</a></li>
+                    <li class="menu-2"><a href="./contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!--title(heading)-->
+    <h1 class="title">Stuff I need to do</h1>
+    <div class="tasks">
+        <h2 class="list-heading">My List</h2>
+        <ul class="list-titles">
+            <li class="list-name 
+            active-list">WebDevelopment</li>
+            <li class="list-name">Python</li>
+            <li class="list-name">GraphicDesigning</li>  
+            <li class="list-name">Blogging</li>
+            <li class="list-name">PracticeTasks</li>
+        </ul>
+
+            <!--form for creating new list-->
+            <form action="" class="list-form">
+                <input type="text" class="create-list" placeholder="Create new List" aria-label="Create new list">
+                <button class="btn" aria-label="Create new List">+</button> 
+
+            </form>       
+
+    </div>
+
+    <!--todo list box-->
+    <div class="todo-list" id="todo-list">
+        <!--name of list and its pending tasks to do Section-->
+        <div class="todo-header">
+            <h2 class="list-name">WebDevelopment</h2>
+            <p class="count-pending-tasks">3 tasks remaining</p>
+
+        </div>
+
+        <!--body of list-->
+        <div class="todo-body" id="todo-body">
+            <!--1st part(items of list)-->
+            <!--task-01-->
+            <div class="list-task">
+                <div class="task">
+                    <input type="checkbox" id="task-1">
+                    <label for="task-1"><span class="custom-checkbox"></span>Practice HTML CSS</label>
+                </div>
+
+            
+
+               <!--task-02-->
+                <div class="task">
+                    <input type="checkbox" id="task-2">
+                    <label for="task-2"><span class="custom-checkbox"></span>Learn Basics of Javascript</label>
+
+                </div>
+
+                <!--task-03-->
+                <div class="task">
+                    <input type="checkbox" id="task-3">
+                    <label for="task-3"><span class="custom-checkbox"></span>Build Projects</label>
+
+                </div>
+
+            </div>
+
+            <!--Add new item to list-->
+            <div class="todo-tasks">
+                <form action="" class="task-form">
+                    <input type="text" class="create-task" placeholder="Create new task" aria-label="Create new task">
+                    <button class="btn" aria-label="Create new task">+</button> 
+    
+                </form> 
+            </div>
+             
+
+            <!-- Delete Buttons-->
+            <div class="dlt-stuff">
+                <button class="btn delete">Clear Completed Tasks</button>
+                <button class="btn delete">Clear List</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
